@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getData } from './common/utilities.js'
 import { ErrorPage, HomePage, LoadingPage } from './pages'
+import './app.scss'
 
 export const App = () => {
   const [data, setData] = useState([])
@@ -35,5 +36,5 @@ export const App = () => {
     }
   }
 
-  return <div>{renderPage()}</div>
+  return <div className="main">{renderPage()}</div>
 }
