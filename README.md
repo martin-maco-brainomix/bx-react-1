@@ -69,6 +69,34 @@ WebStorm provides built-in AI assistance for development tasks:
 - Enable codebase context for relevant suggestions
 - (see pictures at the end of this README)
 
+# How to install your environment:
+Javascript is fairly easy. Just locate the react folder and install.
+- `cd bx-react-1/fe`
+- `npm install`
+
+Python might be a bit more problematic - you need python 3.x and python 3.x-venv packages installed in your WSL. The latest version is 3.12, but if you have an older one, that will also work (tested in both 12 and 10).
+- `sudo apt-get update`
+- `sudo apt install python 3.12`
+- `sudo apt install python 3.12-venv`
+
+Now that it's installed, we still need to install project's dependencies.
+- `cd bx-react-1/be`
+- `python -m venv venv`
+- `source venv/bin/activate`
+- `pip install -r requirements.txt`
+
+# How to start your environment:
+If everything is installed correctly, then you need 2 separate terminal windows - one for the javascript and the other one for our server.
+### Server:
+
+- `cd bx-react-1-be`
+- `source venv/bin/activate` (if you haven't activated your virtualenv)
+- `python ./manage.py runserver` (and leave this running)
+
+### Frontend:
+- `cd bx-react-1-fe`
+- `npm start` (and leave this running in the second terminal)
+
 ## Licensing Note
 For WebStorm IDE:
 - Commercial license recommended for professional development
