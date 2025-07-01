@@ -28,9 +28,12 @@ This project implements a React-based frontend application that interfaces with 
    > Note: WebStorm support and configuration guidance is provided in this workshop
 
 2. **Node.js**
-   - Minimum version: 20.0
+   - Minimum version: 22.0
    - Verify installation: `node -v`
    - Recommended installation method: `nvm` (Node Version Manager)
+     - If you need to change the node version, do this:
+     - `nvm install --lts`
+     - `nvm use --lts`
 
 ## Development Setup
 
